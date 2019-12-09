@@ -1,0 +1,21 @@
+abstract Product
+
+东鹏特饮 extends Product
+
+abstract Factory{
+ abstract getProduct();
+}
+
+public 东鹏特饮Factory extend Factory{
+  @Override
+  public getProduct(){
+     return new 东鹏特饮；
+  }
+}
+
+public 红牛Factory extend Factory{
+  @Override
+  public getProduct(){
+     return new 红牛；
+  }
+}

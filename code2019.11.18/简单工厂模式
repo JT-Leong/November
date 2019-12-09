@@ -1,0 +1,27 @@
+abstract Product
+
+东鹏特饮 extends Product
+
+
+public Factory{
+ 
+ public Product getProducts(String productname){
+    switch(productname){
+	   case "东鹏特饮":
+	          return new 东鹏特饮；
+			  break;
+	   case "红牛":
+	          return new 红牛；
+			  break;
+	   case "乐虎":
+	          return new 乐虎；
+			  break；
+	}
+ }
+  
+}
+
+Factory factory = new Factory();
+
+Product productA = factory.getProducts("东鹏特饮");
+Product productB = factory.getProducts("红牛");
